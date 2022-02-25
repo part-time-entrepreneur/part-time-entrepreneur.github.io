@@ -94,3 +94,4 @@
 'copy_assets:output/assets/webfonts/fa-brands-400.woff', (163840, 308)
 'copy_assets:output/assets/webfonts/fa-brands-400.ttf', (164352, 307)
 'render_sources:output/posts/how-to-keep-learning-costs-low-as-a-solo-entrepreneur/index.src.html', (174592, 334)
+'copy_files:output/CNAME', (234496, 230)
