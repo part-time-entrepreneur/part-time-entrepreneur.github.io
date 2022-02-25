@@ -1,0 +1,36 @@
+{#  -*- coding: utf-8 -*- #}
+
+{% macro html_footer() %}
+    {% if content_footer %}
+        <footer id="footer">
+            <div class="container">
+            <div class="row">
+                <div class="col-4 col-12-medium">
+                    <section>
+                        <header>
+                            <h2>The Part-time Entrepreneur</h2>
+                        </header>
+                        <ul class="social">
+                            <li><a class="icon brands fa-twitter" href="https://twitter.com/pieracle"><span class="label">Twitter</span></a></li>
+                            <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/eracle/"><span class="label">LinkedIn</span></a>
+                            </li>
+                        </ul>
+                        </section>
+                </div>
+                <div class="col-12">
+
+                    <!-- Copyright -->
+                    <div id="copyright">
+                        <ul class="links">
+                            {{ content_footer }}
+                            {{ template_hooks['page_footer']() }}
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </footer>
+    {% endif %}
+{% endmacro %}

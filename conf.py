@@ -154,7 +154,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "paraiso-dark"
+THEME = "dopetrope"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -162,42 +162,12 @@ THEME = "paraiso-dark"
 THEME_COLOR = '#5670d4'
 
 # Theme configuration. Fully theme-dependent. (translatable)
-# Samples for bootblog4 (enabled) and bootstrap4 (commented) follow.
-# bootblog4 supports: featured_large featured_small featured_on_mobile
-#                     featured_large_image_on_mobile featured_strip_html sidebar
-# bootstrap4 supports: navbar_light (defaults to False)
-#                      navbar_custom_bg (defaults to '')
-
-# Config for bootblog4:
+# Config for dopetrope:
 THEME_CONFIG = {
     DEFAULT_LANG: {
-        # Show the latest featured post in a large box, with the previewimage as its background.
-        'featured_large': False,
-        # Show the first (remaining) two featured posts in small boxes.
-        'featured_small': False,
-        # Show featured posts on mobile.
-        'featured_on_mobile': True,
-        # Show image in `featured_large` on mobile.
-        # `featured_small` displays them only on desktop.
-        'featured_large_image_on_mobile': True,
-        # Strip HTML from featured post text.
-        'featured_strip_html': False,
-        # Contents of the sidebar, If empty, the sidebar is not displayed.
-        'sidebar': ''
     }
 }
-# Config for bootstrap4:
-# THEME_CONFIG = {
-#     DEFAULT_LANG: {
-#         # Use a light navbar with dark text. Defaults to False.
-#         'navbar_light': False,
-#         # Use a custom navbar color. If unset, 'navbar_light' sets text +
-#         # background color. If set, navbar_light controls only background
-#         # color. Supported values: bg-dark, bg-light, bg-primary, bg-secondary,
-#         # bg-success, bg-danger, bg-warning, bg-info, bg-white, bg-transparent.
-#         'navbar_custom_bg': '',
-#     }
-# }
+USE_BUNDLES = False  # todo: delete afterwards
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 # (translatable)
@@ -245,7 +215,6 @@ PAGES = (
     ("pages/*.txt", "pages", "page.tmpl"),
     ("pages/*.html", "pages", "page.tmpl"),
 )
-
 
 # Below this point, everything is optional
 
@@ -975,7 +944,13 @@ LICENSE = ""
 
 # A small copyright notice for the page footer (in HTML).
 # (translatable)
-CONTENT_FOOTER = 'Contents &copy; {date}         <a href="mailto:{email}">{author}</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         {license}'
+CONTENT_FOOTER = """
+<li>The Part-time entrepreneur.</li>
+<li>Contents &copy; {date} <a href="mailto:{email}">{author}</a></li>
+<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+<li>Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a></li>
+{license}
+"""
 
 # Things that will be passed to CONTENT_FOOTER.format().  This is done
 # for translatability, as dicts are not formattable.  Nikola will
@@ -1012,7 +987,8 @@ RSS_COPYRIGHT_FORMATS = CONTENT_FOOTER_FORMATS
 # systems.  The following comment systems are supported by Nikola:
 #   disqus, facebook, intensedebate, isso, muut, commento, utterances
 # You can leave this option blank to disable comments.
-COMMENT_SYSTEM = "disqus"
+#COMMENT_SYSTEM = "disqus"
+COMMENT_SYSTEM = ""
 # And you also need to add your COMMENT_SYSTEM_ID which
 # depends on what comment system you use. The default is
 # "nikolademo" which is a test account for Disqus. More information
@@ -1251,7 +1227,17 @@ MARKDOWN_EXTENSIONS = ['markdown.extensions.fenced_code', 'markdown.extensions.c
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
-# BODY_END = ""
+BODY_END = """
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XPRNG9L3E4"></script>
+<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-XPRNG9L3E4');
+</script>
+"""
 
 # The possibility to extract metadata from the filename by using a
 # regular expression.
