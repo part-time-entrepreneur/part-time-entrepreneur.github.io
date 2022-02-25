@@ -1,0 +1,4 @@
+Sitemap: https://part-time-entrepreneur.com/sitemapindex.xml
+
+User-Agent: *
+Host: part-time-entrepreneur.com
