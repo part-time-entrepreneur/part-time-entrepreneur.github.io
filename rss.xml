@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Part-time Entrepreneur</title><link>https://part-time-entrepreneur.com/</link><description>My journey to financial indipendence through bootstraped entrepreneural projects.</description><atom:link href="https://part-time-entrepreneur.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:eracle@posteo.eu"&gt;Antonio Ercole De Luca&lt;/a&gt; </copyright><lastBuildDate>Fri, 25 Feb 2022 15:06:23 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>What is where2buy.it?</title><link>https://part-time-entrepreneur.com/posts/what-is-where2buyit/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;div class="title"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Part-time Entrepreneur</title><link>https://part-time-entrepreneur.com/</link><description>My journey to financial indipendence through bootstraped entrepreneural projects.</description><atom:link href="https://part-time-entrepreneur.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:eracle@posteo.eu"&gt;Antonio Ercole De Luca&lt;/a&gt; </copyright><lastBuildDate>Fri, 25 Feb 2022 15:14:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>What is where2buy.it?</title><link>https://part-time-entrepreneur.com/posts/what-is-where2buyit/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;div class="title"&gt;
   &lt;h2&gt;What is &lt;a href="https://where2buy.it"&gt;where2buy.it?&lt;/a&gt;&lt;/h2&gt;
   &lt;p&gt;Here's a brief description and roadmap of the project I am working on. &lt;/p&gt;
 &lt;/div&gt;
 &lt;br&gt;
 &lt;p&gt;
-  &lt;a href="https://where2buy.it"&gt;Where2buy.it&lt;/a&gt; is a search engine for products sold on physical stores.
+  &lt;a href="https://where2buy.it"&gt;Where2buy.it&lt;/a&gt; is a search engine for products sold in physical stores.
   Users perform searches and find where specific products are sold and by which price.
   The search engine allows finding words appearing directly into Restaurants Menu's content.
 &lt;/p&gt;
@@ -92,7 +92,7 @@
 
 &lt;br&gt;
 &lt;p&gt;
-  &lt;a href="https://where2buy.it"&gt;Where2buy.it&lt;/a&gt; is a search engine for products sold on physical stores.
+  &lt;a href="https://where2buy.it"&gt;Where2buy.it&lt;/a&gt; is a search engine for products sold in physical stores.
   Users perform searches and find where specific products are sold and by which price.
   The search engine allows finding words appearing directly into Restaurants Menu's content.
 &lt;/p&gt;
