@@ -4,3 +4,6 @@ help:
 
 create-post: ## create a new post with nikola
 	nikola new_post -f html
+
+deploy: ## deploy on github
+	nikola github_deploy
