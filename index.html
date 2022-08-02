@@ -16,7 +16,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" hreflang="en" href="rss.xml">
 <link rel="canonical" href="https://part-time-entrepreneur.com/">
-<!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="prefetch" href="posts/what-is-where2buyit/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5shiv-printshiv.min.js"></script><![endif]--><link rel="prefetch" href="posts/how-i-spent-0eur-to-get-traffic-from-google-using-programatic-seo/" type="text/html">
 </head>
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -38,6 +38,83 @@
 
         <!-- Content -->
         <article class="box post" itemscope="itemscope" itemtype="http://schema.org/Article"><div class="e-content entry-content">
+        <div class="title">
+    <h3>How I spent 0€ to get traffic from Google using Programatic SEO</h3>
+    <p>How I used it on getting first traffic with <a href="https://where2buy.it">Where2buy.it</a></p>
+</div>
+<br><p>
+    In this post, I explain how I used Programmatic SEO to get some traffic from Google's search engines for the most
+    recent product I created: a search engine for food sold in physical stores.
+</p>
+
+
+<h4>Let's start from the basics:</h4>
+<p>
+    Programmatic SEO is a technique used in the field of Search Engine Optimization (SEO). Like many other SEO
+    practices, it aims to improve the quality and quantity of web traffic from search engines.
+    It consists of the automatic generation of static pages that contain a direct link to your landing page or
+    are one click away from your product's core feature.
+</p>
+<img src="images/prog_seo/cities.png" alt="" class="image"><h4>What we need:</h4>
+<p>
+    The technique uses a database and a templated HTML page to generate the pages. The database should contain
+    the keywords you want to rank for on Google. For instance, you can start from a list of long-tail keywords
+    or the list of cities where you sell your product.
+</p>
+
+<p>
+
+    The template should allow you to use variables inside your HTML, so they can be substituted using the data from your
+    database.
+    One detail about your database: you should also have some content specifically related to the keyword you are using.
+    For instance, if you use keywords related to cities, you can include other information like the name of its region,
+    nation or some text unique to that city. The objective is to obtain every page different from all the other pages.
+    The reason is that Google ignores pages that are too similar to other pages it already indexes.
+</p>
+
+<h4>Which tools I used:</h4>
+<p>
+    I used the Django template system to build the HTML pages. Of course, there are already no-code tools you can use on
+    the Internet, like Webflow.
+    I wrote a python script that generates the information needed to render the page through the template using keywords
+    read from a database.
+</p>
+
+<h4>Database content:</h4>
+<p>
+    In my database, I store different entities:
+    The Cities, the Restaurants and the Products sold in those restaurants.
+    I got the Cities data for free simply by using Django and its ecosystem of open-source pluggable apps, which solved
+    many of my problems.  I used Django-cities-light, which automagically downloads the data of all the cities in the world and stores them in my database. It also provides the hierarchy of City, Region and Nation.
+    I got Restaurants and Products data from the Internet.
+</p>
+
+<h4>Generated Pages:</h4>
+<p>
+    The pages generated for the sake of programmatic SEO are simply ranking pages. They are pages containing an ordered
+    list of products sorted by specific metrics. For instance: price. For each category and city, I generated a list of
+    the cheapest products sold in that city.
+</p>
+<ul>
+<li>
+<a href="https://where2buy.it/cheapest-focaccia-bari">cheapest Focaccia in Bari</a>;</li>
+    <li>
+<a href="https://where2buy.it/most-expensive-pizza-reggio-calabria">most expensive Pizza in Reggio Calabria</a>;
+    </li>
+</ul>
+<h4> Results:</h4>
+<p>
+    Results are ok, considering I knew almost nothing about SEO techniques.
+    I still have to finish filling my database with all Italian cities, but having 4000 impressions and ten visitors per
+    day is not bad, considering I only coded some software.
+    Anyway, I am sure there are other tricks to increase even more my SEO, which can be a future starting point.
+</p>
+
+<img src="images/prog_seo/results.png" alt="Results" style='width:80%;height:80%;"' class="image"><p>
+    I will have a public talk about this subject on Monday. I hope I will include the Youtube presentation here.
+</p>
+        </div>
+        </article><!-- Content --><article class="box post" itemscope="itemscope" itemtype="http://schema.org/Article"><div class="e-content entry-content">
         <div class="title">
   <h2>What is <a href="https://where2buy.it">where2buy.it?</a>
 </h2>
@@ -145,35 +222,29 @@
     Today, we have so much free knowledge on the Internet, learning a new skill seems similar to the
     famous scene in The Matrix: "Now I know Kung Fu!".
     
-    <center>
-        <img src="images/matrix_kungfu.jpg" alt="" style="width:50%;height:50%;"><p>
-    </p>
-</center>
+
+    <img src="images/matrix_kungfu.jpg" alt="Now I know Kung Fu!" class="image"><p>
+
         The objective of this blog is to explain my recipe to achieve Financial Independence and get rid
         of the obsolete full-time job scheme.
         Not everybody can do it now. For some people, that can take years of preparation. For others,
         technology is just not ready for it. But I will try to cover some points that I believe are key.
         I will present them with some practical suggestions on how-to-use low-cost tools.
-    
+    </p>
     <p>
         The first mandatory asset for a successful part-time entrepreneur is knowledge. We shouldn't let
         our entrepreneurial tasks devour our days. Even Warren Buffett and Bill Gates take their time to
         study and understand how the world works.
     </p>
+    <h6>Books:</h6>
     <p>
-    </p>
-<h6>Books:</h6>
-
     To find free books exist the pirate search engine <a href="https://librarygenesis.net/">Library
     Genesis</a>. It allows you to download
     e-books for free. Unfortunately, it doesn't seem accessible from some nations, so maybe, in the
     future, I will explain some technicalities on how to access it.
     I use a Kindle DX (9 inches) to read PDFs, it was an investment, but it repaid everything.
-    
-    <br><center>
-        <img src="https://pbs.twimg.com/media/FHIRt38XwAcGDR4?format=jpg" alt="Kindle DX" style="width:30%;height:30%;"><p>
     </p>
-</center>
+    <br><img src="https://pbs.twimg.com/media/FHIRt38XwAcGDR4?format=jpg" alt="Kindle DX" class="image" style="width:30%;height:30%;"><p>
 
         The Kindle DX model screen perfectly fits PDFs sizes and is the bigger among all Kindles Amazon
         manufactured. It is easy to read PDFs with it.
@@ -181,7 +252,7 @@
         business. Maybe, that could have been the cause of why Amazon manufactured all subsequent models
         with a smaller screen.
         Here's an example of how we can own automation to keep our living costs close to zero.
-    
+    </p>
     <p>
 
     </p>
@@ -270,4 +341,3 @@
 </script>
 </body>
 </html>
-

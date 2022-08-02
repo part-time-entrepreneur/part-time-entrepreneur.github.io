@@ -1,5 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Part-time Entrepreneur</title><link>https://part-time-entrepreneur.com/</link><description>My journey to financial indipendence through bootstraped entrepreneural projects.</description><atom:link href="https://part-time-entrepreneur.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:eracle@posteo.eu"&gt;Antonio Ercole De Luca&lt;/a&gt; </copyright><lastBuildDate>Fri, 25 Feb 2022 17:03:59 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>What is where2buy.it?</title><link>https://part-time-entrepreneur.com/posts/what-is-where2buyit/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;div class="title"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Part-time Entrepreneur</title><link>https://part-time-entrepreneur.com/</link><description>My journey to financial indipendence through bootstraped entrepreneural projects.</description><atom:link href="https://part-time-entrepreneur.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:eracle@posteo.eu"&gt;Antonio Ercole De Luca&lt;/a&gt; </copyright><lastBuildDate>Tue, 02 Aug 2022 18:06:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How I spent 0€ to get traffic from Google using Programatic SEO</title><link>https://part-time-entrepreneur.com/posts/how-i-spent-0eur-to-get-traffic-from-google-using-programatic-seo/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;div class="title"&gt;
+    &lt;h3&gt;How I spent 0€ to get traffic from Google using Programatic SEO&lt;/h3&gt;
+    &lt;p&gt;How I used it on getting first traffic with &lt;a href="https://where2buy.it"&gt;Where2buy.it&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;
+    In this post, I explain how I used Programmatic SEO to get some traffic from Google's search engines for the most
+    recent product I created: a search engine for food sold in physical stores.
+&lt;/p&gt;
+
+
+&lt;h4&gt;Let's start from the basics:&lt;/h4&gt;
+&lt;p&gt;
+    Programmatic SEO is a technique used in the field of Search Engine Optimization (SEO). Like many other SEO
+    practices, it aims to improve the quality and quantity of web traffic from search engines.
+    It consists of the automatic generation of static pages that contain a direct link to your landing page or
+    are one click away from your product's core feature.
+&lt;/p&gt;
+&lt;img src="https://part-time-entrepreneur.com/images/prog_seo/cities.png" alt="" class="image"&gt;
+&lt;h4&gt;What we need:&lt;/h4&gt;
+&lt;p&gt;
+    The technique uses a database and a templated HTML page to generate the pages. The database should contain
+    the keywords you want to rank for on Google. For instance, you can start from a list of long-tail keywords
+    or the list of cities where you sell your product.
+&lt;/p&gt;
+
+&lt;p&gt;
+
+    The template should allow you to use variables inside your HTML, so they can be substituted using the data from your
+    database.
+    One detail about your database: you should also have some content specifically related to the keyword you are using.
+    For instance, if you use keywords related to cities, you can include other information like the name of its region,
+    nation or some text unique to that city. The objective is to obtain every page different from all the other pages.
+    The reason is that Google ignores pages that are too similar to other pages it already indexes.
+&lt;/p&gt;
+
+&lt;h4&gt;Which tools I used:&lt;/h4&gt;
+&lt;p&gt;
+    I used the Django template system to build the HTML pages. Of course, there are already no-code tools you can use on
+    the Internet, like Webflow.
+    I wrote a python script that generates the information needed to render the page through the template using keywords
+    read from a database.
+&lt;/p&gt;
+
+&lt;h4&gt;Database content:&lt;/h4&gt;
+&lt;p&gt;
+    In my database, I store different entities:
+    The Cities, the Restaurants and the Products sold in those restaurants.
+    I got the Cities data for free simply by using Django and its ecosystem of open-source pluggable apps, which solved
+    many of my problems.  I used Django-cities-light, which automagically downloads the data of all the cities in the world and stores them in my database. It also provides the hierarchy of City, Region and Nation.
+    I got Restaurants and Products data from the Internet.
+&lt;/p&gt;
+
+&lt;h4&gt;Generated Pages:&lt;/h4&gt;
+&lt;p&gt;
+    The pages generated for the sake of programmatic SEO are simply ranking pages. They are pages containing an ordered
+    list of products sorted by specific metrics. For instance: price. For each category and city, I generated a list of
+    the cheapest products sold in that city.
+&lt;/p&gt;&lt;ul&gt;
+    &lt;li&gt;&lt;a href="https://where2buy.it/cheapest-focaccia-bari"&gt;cheapest Focaccia in Bari&lt;/a&gt;;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://where2buy.it/most-expensive-pizza-reggio-calabria"&gt;most expensive Pizza in Reggio Calabria&lt;/a&gt;;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h4&gt; Results:&lt;/h4&gt;
+&lt;p&gt;
+    Results are ok, considering I knew almost nothing about SEO techniques.
+    I still have to finish filling my database with all Italian cities, but having 4000 impressions and ten visitors per
+    day is not bad, considering I only coded some software.
+    Anyway, I am sure there are other tricks to increase even more my SEO, which can be a future starting point.
+&lt;/p&gt;
+
+&lt;img src="https://part-time-entrepreneur.com/images/prog_seo/results.png" alt="Results" style='width:80%;height:80%;"' class="image"&gt;
+&lt;p&gt;
+    I will have a public talk about this subject on Monday. I hope I will include the Youtube presentation here.
+&lt;/p&gt;</description><guid>https://part-time-entrepreneur.com/posts/how-i-spent-0eur-to-get-traffic-from-google-using-programatic-seo/</guid><pubDate>Tue, 02 Aug 2022 17:03:31 GMT</pubDate></item><item><title>What is where2buy.it?</title><link>https://part-time-entrepreneur.com/posts/what-is-where2buyit/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;div class="title"&gt;
   &lt;h2&gt;What is &lt;a href="https://where2buy.it"&gt;where2buy.it?&lt;/a&gt;&lt;/h2&gt;
   &lt;p&gt;Here's a brief description and roadmap of the project I am working on. &lt;/p&gt;
 &lt;/div&gt;
@@ -85,722 +161,7 @@
 &lt;p&gt;
   But maybe I am going too forward, for now.
   &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;br&gt;
-&lt;p&gt;
-  &lt;a href="https://where2buy.it"&gt;Where2buy.it&lt;/a&gt; is a search engine for products sold in physical stores.
-  Users perform searches and find where specific products are sold and by which price.
-  The search engine allows finding words appearing directly into Restaurants Menu's content.
-&lt;/p&gt;
-&lt;p&gt;
-  Finding products is not all, as most important is to find the best products.
-  That's why the platform uses &lt;a href="https://en.wikipedia.org/wiki/Sentiment_analysis"&gt;Sentiment Analysis&lt;/a&gt; to read products' reviews that users have published online.
-  Not all reviews are selected, but only the public ones that mention the specific product for that
-  restaurant.
-  Sentiment Analysis analyzes human language written in the phrases and determines if the customer experience was positive or negative.
-  So the search engine can forecast the probability of a negative customer experience for that product.
-  When a user searches, the platform shows first the results that minimize the chance of a negative customer experience.
-&lt;/p&gt;
-
-&lt;h3&gt;Personal philosophy:&lt;/h3&gt;
-&lt;p&gt;
-  My name is &lt;a href="https://eracle.me"&gt;Antonio Ercole De Luca&lt;/a&gt;.
-  I am running this project without external funding and following methodologies borrowed from the &lt;a href="https://www.indiehackers.com/"&gt;Indie hackers community&lt;/a&gt;.
-  Don't accepting any external funding is more a lifestyle choice.
-  Technology has achieved enough potential that we can pretty much do everything with software without the need for external help.
-  Silicon Valley's way of doing startups is stressful for CEO and founders.
-  That is not how I want to live my life.
-&lt;/p&gt;
-&lt;p&gt;
-  Another fallacy in Venture Capital funded startups is that external money can subsidize and make up fictional growth for a product that doesn't create value for anybody.
-  If the product creates value, the market will show organically.
-  If it doesn't, better work on the next idea.
-&lt;/p&gt;
-&lt;p&gt;
-  I will work on some additional features and let the market validate the idea.
-  Next feature is to give users quantitative market metrics about products.
-  For that, products pages will show some dashboards like:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;sentiment analysis score over time;&lt;/li&gt;
-  &lt;li&gt;where the product's price lies towards its competitors;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-  Last feature I will implement is &lt;a href="https://en.wikipedia.org/wiki/Wiki"&gt;wiki-style management&lt;/a&gt; of Restaurants' menus.
-  In other words, the menu's content will be open and editable by every user, very similar to Wikipedia pages.
-  Every user will have the possibility to add, remove or modify products entries inside restaurants menus.
-&lt;/p&gt;
-&lt;h3&gt;Market Differentiation:&lt;/h3&gt;
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  Finding products is not all, as most important is to find the best products.
-  That's why the platform uses &lt;a href="https://en.wikipedia.org/wiki/Sentiment_analysis"&gt;Sentiment Analysis&lt;/a&gt; to read products' reviews that users have published online.
-  Not all reviews are selected, but only the public ones that mention the specific product for that
-  restaurant.
-  Sentiment Analysis analyzes human language written in the phrases and determines if the customer experience was positive or negative.
-  So the search engine can forecast the probability of a negative customer experience for that product.
-  When a user searches, the platform shows first the results that minimize the chance of a negative customer experience.
-&lt;/p&gt;
-
-&lt;h3&gt;Personal philosophy:&lt;/h3&gt;
-&lt;p&gt;
-  My name is &lt;a href="https://eracle.me"&gt;Antonio Ercole De Luca&lt;/a&gt;.
-  I am running this project without external funding and following methodologies borrowed from the &lt;a href="https://www.indiehackers.com/"&gt;Indie hackers community&lt;/a&gt;.
-  Don't accepting any external funding is more a lifestyle choice.
-  Technology has achieved enough potential that we can pretty much do everything with software without the need for external help.
-  Silicon Valley's way of doing startups is stressful for CEO and founders.
-  That is not how I want to live my life.
-&lt;/p&gt;
-&lt;p&gt;
-  Another fallacy in Venture Capital funded startups is that external money can subsidize and make up fictional growth for a product that doesn't create value for anybody.
-  If the product creates value, the market will show organically.
-  If it doesn't, better work on the next idea.
-&lt;/p&gt;
-&lt;p&gt;
-  I will work on some additional features and let the market validate the idea.
-  Next feature is to give users quantitative market metrics about products.
-  For that, products pages will show some dashboards like:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;sentiment analysis score over time;&lt;/li&gt;
-  &lt;li&gt;where the product's price lies towards its competitors;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-  Last feature I will implement is &lt;a href="https://en.wikipedia.org/wiki/Wiki"&gt;wiki-style management&lt;/a&gt; of Restaurants' menus.
-  In other words, the menu's content will be open and editable by every user, very similar to Wikipedia pages.
-  Every user will have the possibility to add, remove or modify products entries inside restaurants menus.
-&lt;/p&gt;
-&lt;h3&gt;Market Differentiation:&lt;/h3&gt;
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-
-&lt;h3&gt;Personal philosophy:&lt;/h3&gt;
-&lt;p&gt;
-  My name is &lt;a href="https://eracle.me"&gt;Antonio Ercole De Luca&lt;/a&gt;.
-  I am running this project without external funding and following methodologies borrowed from the &lt;a href="https://www.indiehackers.com/"&gt;Indie hackers community&lt;/a&gt;.
-  Don't accepting any external funding is more a lifestyle choice.
-  Technology has achieved enough potential that we can pretty much do everything with software without the need for external help.
-  Silicon Valley's way of doing startups is stressful for CEO and founders.
-  That is not how I want to live my life.
-&lt;/p&gt;
-&lt;p&gt;
-  Another fallacy in Venture Capital funded startups is that external money can subsidize and make up fictional growth for a product that doesn't create value for anybody.
-  If the product creates value, the market will show organically.
-  If it doesn't, better work on the next idea.
-&lt;/p&gt;
-&lt;p&gt;
-  I will work on some additional features and let the market validate the idea.
-  Next feature is to give users quantitative market metrics about products.
-  For that, products pages will show some dashboards like:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;sentiment analysis score over time;&lt;/li&gt;
-  &lt;li&gt;where the product's price lies towards its competitors;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-  Last feature I will implement is &lt;a href="https://en.wikipedia.org/wiki/Wiki"&gt;wiki-style management&lt;/a&gt; of Restaurants' menus.
-  In other words, the menu's content will be open and editable by every user, very similar to Wikipedia pages.
-  Every user will have the possibility to add, remove or modify products entries inside restaurants menus.
-&lt;/p&gt;
-&lt;h3&gt;Market Differentiation:&lt;/h3&gt;
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  My name is &lt;a href="https://eracle.me"&gt;Antonio Ercole De Luca&lt;/a&gt;.
-  I am running this project without external funding and following methodologies borrowed from the &lt;a href="https://www.indiehackers.com/"&gt;Indie hackers community&lt;/a&gt;.
-  Don't accepting any external funding is more a lifestyle choice.
-  Technology has achieved enough potential that we can pretty much do everything with software without the need for external help.
-  Silicon Valley's way of doing startups is stressful for CEO and founders.
-  That is not how I want to live my life.
-&lt;/p&gt;
-&lt;p&gt;
-  Another fallacy in Venture Capital funded startups is that external money can subsidize and make up fictional growth for a product that doesn't create value for anybody.
-  If the product creates value, the market will show organically.
-  If it doesn't, better work on the next idea.
-&lt;/p&gt;
-&lt;p&gt;
-  I will work on some additional features and let the market validate the idea.
-  Next feature is to give users quantitative market metrics about products.
-  For that, products pages will show some dashboards like:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;sentiment analysis score over time;&lt;/li&gt;
-  &lt;li&gt;where the product's price lies towards its competitors;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-  Last feature I will implement is &lt;a href="https://en.wikipedia.org/wiki/Wiki"&gt;wiki-style management&lt;/a&gt; of Restaurants' menus.
-  In other words, the menu's content will be open and editable by every user, very similar to Wikipedia pages.
-  Every user will have the possibility to add, remove or modify products entries inside restaurants menus.
-&lt;/p&gt;
-&lt;h3&gt;Market Differentiation:&lt;/h3&gt;
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  Another fallacy in Venture Capital funded startups is that external money can subsidize and make up fictional growth for a product that doesn't create value for anybody.
-  If the product creates value, the market will show organically.
-  If it doesn't, better work on the next idea.
-&lt;/p&gt;
-&lt;p&gt;
-  I will work on some additional features and let the market validate the idea.
-  Next feature is to give users quantitative market metrics about products.
-  For that, products pages will show some dashboards like:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;sentiment analysis score over time;&lt;/li&gt;
-  &lt;li&gt;where the product's price lies towards its competitors;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-  Last feature I will implement is &lt;a href="https://en.wikipedia.org/wiki/Wiki"&gt;wiki-style management&lt;/a&gt; of Restaurants' menus.
-  In other words, the menu's content will be open and editable by every user, very similar to Wikipedia pages.
-  Every user will have the possibility to add, remove or modify products entries inside restaurants menus.
-&lt;/p&gt;
-&lt;h3&gt;Market Differentiation:&lt;/h3&gt;
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  I will work on some additional features and let the market validate the idea.
-  Next feature is to give users quantitative market metrics about products.
-  For that, products pages will show some dashboards like:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;sentiment analysis score over time;&lt;/li&gt;
-  &lt;li&gt;where the product's price lies towards its competitors;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-  Last feature I will implement is &lt;a href="https://en.wikipedia.org/wiki/Wiki"&gt;wiki-style management&lt;/a&gt; of Restaurants' menus.
-  In other words, the menu's content will be open and editable by every user, very similar to Wikipedia pages.
-  Every user will have the possibility to add, remove or modify products entries inside restaurants menus.
-&lt;/p&gt;
-&lt;h3&gt;Market Differentiation:&lt;/h3&gt;
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;sentiment analysis score over time;&lt;/li&gt;
-  &lt;li&gt;where the product's price lies towards its competitors;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-  Last feature I will implement is &lt;a href="https://en.wikipedia.org/wiki/Wiki"&gt;wiki-style management&lt;/a&gt; of Restaurants' menus.
-  In other words, the menu's content will be open and editable by every user, very similar to Wikipedia pages.
-  Every user will have the possibility to add, remove or modify products entries inside restaurants menus.
-&lt;/p&gt;
-&lt;h3&gt;Market Differentiation:&lt;/h3&gt;
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  Last feature I will implement is &lt;a href="https://en.wikipedia.org/wiki/Wiki"&gt;wiki-style management&lt;/a&gt; of Restaurants' menus.
-  In other words, the menu's content will be open and editable by every user, very similar to Wikipedia pages.
-  Every user will have the possibility to add, remove or modify products entries inside restaurants menus.
-&lt;/p&gt;
-&lt;h3&gt;Market Differentiation:&lt;/h3&gt;
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;h3&gt;Market Differentiation:&lt;/h3&gt;
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  Other actors doing similar things out there:
-  &lt;a href="http://maps.google.com/"&gt;Google Maps&lt;/a&gt;, &lt;a href="https://www.tripadvisor.com/Restaurants"&gt;Tripadvisor&lt;/a&gt;, &lt;a href="https://www.thefork.com/"&gt;TheFork&lt;/a&gt;, &lt;a href="https://restaurantguru.com/"&gt;RestaurantGuru&lt;/a&gt; (and now &lt;a href="https://where2buy.it"&gt;where2buy.it&lt;/a&gt;).
-  The differentiating factor here is to operate on a different data granularity:
-  the main focus of this platform is to allow users to discover good food/products.
-  In contrast with the other actors, my focus is not on restaurants but good products.
-  Most of those companies lack at least one of those points:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;having any single product level detail on their searches; &lt;/li&gt;
-  &lt;li&gt;having products' prices;&lt;/li&gt;
-  &lt;li&gt;analyzing products sentiments.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;h3&gt;After market-validation:&lt;/h3&gt;
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  Having users will be the first step for market validation.
-  After that, the business must achieve financial sustainability.
-  The main form of wealth the platform creates is bringing customers to restaurants.
-  As a part of a premium plan, restaurant owners will be able to advertise their listings
-  on the first positions on the search engine results page:
-  The same model as &lt;a href="https://ads.google.com/"&gt;Google Search Ads&lt;/a&gt;.
-&lt;/p&gt;
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;h3&gt;Future directions:&lt;/h3&gt;
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  In the beginning, we had food and restaurants data.
-  The future will allow us to track every single product available out there.
-  It's only a matter of data availability and integration.
-  Grocery stores will sync their data about inventory's availability directly with the platform.
-&lt;/p&gt;
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  Another direction is to include farmers and remote producers in the platform.
-  The users will select by production place, price and sentiment.
-  In this case, the platform could provide an optional shipping service that can allow users to buy online directly from rural producers.
-&lt;/p&gt;
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;p&gt;
-  But maybe I am going too forward, for now.
-  &lt;a href="https://where2buy.it"&gt;Try the search engine&lt;/a&gt; and drop me a comment down &lt;a href="https://part-time-entrepreneur.com/posts/what-is-where2buyit/"&gt;here&lt;/a&gt; ⬇ ️
-&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
-</description><guid>https://part-time-entrepreneur.com/posts/what-is-where2buyit/</guid><pubDate>Fri, 25 Feb 2022 14:13:30 GMT</pubDate></item><item><title>How to keep Learning costs low as a Solo Entrepreneur</title><link>https://part-time-entrepreneur.com/posts/how-to-keep-learning-costs-low-as-a-solo-entrepreneur/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;header&gt;
+&lt;/p&gt;</description><guid>https://part-time-entrepreneur.com/posts/what-is-where2buyit/</guid><pubDate>Fri, 25 Feb 2022 14:13:30 GMT</pubDate></item><item><title>How to keep Learning costs low as a Solo Entrepreneur</title><link>https://part-time-entrepreneur.com/posts/how-to-keep-learning-costs-low-as-a-solo-entrepreneur/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;header&gt;
     &lt;h3&gt;How to keep Learning costs low as a Solo Entrepreneur&lt;/h3&gt;
     &lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Move_fast_and_break_things_(motto)"&gt;Move Fast Break
         Things&lt;/a&gt;: that's a well known Silicon Valley's motto. &lt;/p&gt;
@@ -820,35 +181,32 @@
     Today, we have so much free knowledge on the Internet, learning a new skill seems similar to the
     famous scene in The Matrix: "Now I know Kung Fu!".
     
-    &lt;center&gt;
-        &lt;img src="https://part-time-entrepreneur.com/images/matrix_kungfu.jpg" alt="" style="width:50%;height:50%;"&gt;
-        &lt;p&gt;
-    &lt;/p&gt;&lt;/center&gt;
+
+    &lt;img src="https://part-time-entrepreneur.com/images/matrix_kungfu.jpg" alt="Now I know Kung Fu!" class="image"&gt;
+    &lt;p&gt;
+
         The objective of this blog is to explain my recipe to achieve Financial Independence and get rid
         of the obsolete full-time job scheme.
         Not everybody can do it now. For some people, that can take years of preparation. For others,
         technology is just not ready for it. But I will try to cover some points that I believe are key.
         I will present them with some practical suggestions on how-to-use low-cost tools.
-    
+    &lt;/p&gt;
     &lt;p&gt;
         The first mandatory asset for a successful part-time entrepreneur is knowledge. We shouldn't let
         our entrepreneurial tasks devour our days. Even Warren Buffett and Bill Gates take their time to
         study and understand how the world works.
     &lt;/p&gt;
+    &lt;h6&gt;Books:&lt;/h6&gt;
     &lt;p&gt;
-    &lt;/p&gt;&lt;h6&gt;Books:&lt;/h6&gt;
-
     To find free books exist the pirate search engine &lt;a href="https://librarygenesis.net/"&gt;Library
     Genesis&lt;/a&gt;. It allows you to download
     e-books for free. Unfortunately, it doesn't seem accessible from some nations, so maybe, in the
     future, I will explain some technicalities on how to access it.
     I use a Kindle DX (9 inches) to read PDFs, it was an investment, but it repaid everything.
-    
+    &lt;/p&gt;
     &lt;br&gt;
-    &lt;center&gt;
-        &lt;img src="https://pbs.twimg.com/media/FHIRt38XwAcGDR4?format=jpg" alt="Kindle DX" style="width:30%;height:30%;"&gt;
-        &lt;p&gt;
-    &lt;/p&gt;&lt;/center&gt;
+    &lt;img src="https://pbs.twimg.com/media/FHIRt38XwAcGDR4?format=jpg" alt="Kindle DX" class="image" style="width:30%;height:30%;"&gt;
+    &lt;p&gt;
 
         The Kindle DX model screen perfectly fits PDFs sizes and is the bigger among all Kindles Amazon
         manufactured. It is easy to read PDFs with it.
@@ -856,7 +214,7 @@
         business. Maybe, that could have been the cause of why Amazon manufactured all subsequent models
         with a smaller screen.
         Here's an example of how we can own automation to keep our living costs close to zero.
-    
+    &lt;/p&gt;
     &lt;p&gt;
 
     &lt;/p&gt;&lt;h6&gt; Pomodoro Technique:&lt;/h6&gt;
@@ -891,93 +249,4 @@
         So, follow me on Twitter and stay tuned!
     &lt;p&gt;
     &lt;/p&gt;
-&lt;/section&gt;&lt;/body&gt;&lt;/html&gt;
-
-&lt;section&gt;
-    &lt;p&gt;
-        The process of starting up a new company can have the following cycle:
-    &lt;/p&gt;&lt;ul&gt;
-        &lt;li&gt;express hypotheses on markets and customers;&lt;/li&gt;
-        &lt;li&gt;test those hypotheses in the real world;&lt;/li&gt;
-        &lt;li&gt;make this cycle as fast as possible.&lt;/li&gt;
-    &lt;/ul&gt;
-    Performing mistakes is not a big problem for startups, as long as it increases the most valuable
-    asset: &lt;a href="https://en.wikipedia.org/wiki/Validated_learning"&gt;validated learning&lt;/a&gt;.
-    But not all things an entrepreneur should understand are about startup's markets or customers.
-    Sometimes problems they are facing were already solved by someone else out there in the world.
-    Today, we have so much free knowledge on the Internet, learning a new skill seems similar to the
-    famous scene in The Matrix: "Now I know Kung Fu!".
-    
-    &lt;center&gt;
-        &lt;img src="https://part-time-entrepreneur.com/images/matrix_kungfu.jpg" alt="" style="width:50%;height:50%;"&gt;
-        &lt;p&gt;
-    &lt;/p&gt;&lt;/center&gt;
-        The objective of this blog is to explain my recipe to achieve Financial Independence and get rid
-        of the obsolete full-time job scheme.
-        Not everybody can do it now. For some people, that can take years of preparation. For others,
-        technology is just not ready for it. But I will try to cover some points that I believe are key.
-        I will present them with some practical suggestions on how-to-use low-cost tools.
-    
-    &lt;p&gt;
-        The first mandatory asset for a successful part-time entrepreneur is knowledge. We shouldn't let
-        our entrepreneurial tasks devour our days. Even Warren Buffett and Bill Gates take their time to
-        study and understand how the world works.
-    &lt;/p&gt;
-    &lt;p&gt;
-    &lt;/p&gt;&lt;h6&gt;Books:&lt;/h6&gt;
-
-    To find free books exist the pirate search engine &lt;a href="https://librarygenesis.net/"&gt;Library
-    Genesis&lt;/a&gt;. It allows you to download
-    e-books for free. Unfortunately, it doesn't seem accessible from some nations, so maybe, in the
-    future, I will explain some technicalities on how to access it.
-    I use a Kindle DX (9 inches) to read PDFs, it was an investment, but it repaid everything.
-    
-    &lt;br&gt;
-    &lt;center&gt;
-        &lt;img src="https://pbs.twimg.com/media/FHIRt38XwAcGDR4?format=jpg" alt="Kindle DX" style="width:30%;height:30%;"&gt;
-        &lt;p&gt;
-    &lt;/p&gt;&lt;/center&gt;
-
-        The Kindle DX model screen perfectly fits PDFs sizes and is the bigger among all Kindles Amazon
-        manufactured. It is easy to read PDFs with it.
-        In my opinion, its users were less prone to buy DRM covered e-books which were part of Amazon's
-        business. Maybe, that could have been the cause of why Amazon manufactured all subsequent models
-        with a smaller screen.
-        Here's an example of how we can own automation to keep our living costs close to zero.
-    
-    &lt;p&gt;
-
-    &lt;/p&gt;&lt;h6&gt; Pomodoro Technique:&lt;/h6&gt;
-    &lt;p&gt;
-        I use 25 minutes &lt;a href="https://en.wikipedia.org/wiki/Pomodoro_Technique"&gt;Pomodoro
-        sessions&lt;/a&gt; for study. I turn off all my devices. I do my sessions during
-        my most clear-minded moments of the day and before starting any screen-related work. I love
-        libraries.
-    &lt;/p&gt;&lt;h6&gt;Podcasts:&lt;/h6&gt;
-    &lt;p&gt;
-        One of the best sources for becoming a solo-entrepreneur is &lt;a href="https://www.indiehackers.com/podcasts"&gt;Indiehackers podcasts&lt;/a&gt;. That's a
-        valuable source of experiences and examples of successful professionals sharing experiences and
-        knowledge.
-        I listen to podcasts after going to bed and before falling asleep, so I will not stress my eyes
-        using any screen-related artificial light.
-    &lt;/p&gt;
-
-    &lt;h6&gt;Conclusions:&lt;/h6&gt;
-    &lt;p&gt;
-        I named this blog &lt;a href="https://part-time-entrepreneur.com"&gt;part-time entrepreneur&lt;/a&gt;
-        because I work half of my time on my &lt;a href="https://where2buy.it"&gt;actual product&lt;/a&gt;.
-        I use the rest of my time for other activities like studying, thinking, writing, walking, doing
-        sport and enjoying life.
-        
-        Those are all aimed at the final objective, don't waste our lives on the wrong paths: the ones
-        that break things.
-    &lt;/p&gt;
-    &lt;p&gt;
-        I will share in this blog all meaningful experiences and stories that I will face during my
-        journey as a solo entrepreneur.
-    &lt;/p&gt;
-        So, follow me on Twitter and stay tuned!
-    &lt;p&gt;
-    &lt;/p&gt;
-&lt;/section&gt;&lt;/body&gt;&lt;/html&gt;
-</description><guid>https://part-time-entrepreneur.com/posts/how-to-keep-learning-costs-low-as-a-solo-entrepreneur/</guid><pubDate>Wed, 23 Feb 2022 10:41:22 GMT</pubDate></item></channel></rss>
+&lt;/section&gt;</description><guid>https://part-time-entrepreneur.com/posts/how-to-keep-learning-costs-low-as-a-solo-entrepreneur/</guid><pubDate>Wed, 23 Feb 2022 10:41:22 GMT</pubDate></item></channel></rss>
