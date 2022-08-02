@@ -100,15 +100,15 @@ input, select, textarea {
 
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
-		font-weight: 300;
-		color: #3b3b3b;
-		font-size: 14pt;
+		font-weight: 400;
+		color: rgba(0,0,0,1.00);
+		font-size: 15pt;
 		line-height: 1.75em;
 	}
 
 	strong, b {
 		color: #252122;
-		font-weight: 400;
+		font-weight: 500;
 	}
 
 	i, em {
@@ -1571,7 +1571,7 @@ input, select, textarea {
 	.box {
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 2.75em 1.75em 2.75em 1.75em;
+		padding: 2.75em 6.75em 2.75em 6.75em;
 	}
 
 		.box .image.featured {
@@ -1692,6 +1692,11 @@ input, select, textarea {
 	.image {
 		display: inline-block;
 		outline: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:50%;
+        height:50%;
 	}
 
 		.image img {
