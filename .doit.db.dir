@@ -106,3 +106,7 @@
 'scale_images:output/images/prog_seo/results.png', (366080, 230)
 'render_pages:output/posts/how-i-spent-0eur-to-get-traffic-from-google-using-programmatic-seo/index.html', (366592, 4222)
 'render_sources:output/posts/how-i-spent-0eur-to-get-traffic-from-google-using-programmatic-seo/index.src.html', (371200, 359)
+'scale_images:output/images/prog_seo/template.png', (375808, 236)
+'scale_images:output/images/prog_seo/focaccia.png', (376320, 237)
+'scale_images:output/images/prog_seo/product_reviews.png', (376832, 250)
+'scale_images:output/images/prog_seo/restau_reviews.png', (377344, 248)
