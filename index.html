@@ -63,9 +63,10 @@
 </p>
 
 <p>
-
     The template should allow you to use variables inside your HTML, so they can be substituted using the data from your
     database.
+
+    <img src="images/prog_seo/template.png" alt="" class="image">
     One detail about your database: you should also have some content specifically related to the keyword you are using.
     For instance, if you use keywords related to cities, you can include other information like the name of its region,
     nation or some text unique to that city. The objective is to obtain every page different from all the other pages.
@@ -85,11 +86,26 @@
     In my database, I store different entities:
     The Cities, the Restaurants and the Products sold in those restaurants.
     I got the Cities data for free simply by using Django and its ecosystem of open-source pluggable apps, which solved
-    many of my problems.  I used Django-cities-light, which automagically downloads the data of all the cities in the world and stores them in my database. It also provides the hierarchy of City, Region and Nation.
+    many of my problems. I used Django-cities-light, which automagically downloads the data of all the cities in the
+    world and stores them in my database. It also provides the hierarchy of City, Region and Nation.
     I got Restaurants and Products data from the Internet.
 </p>
 
-<h4>Generated Pages:</h4>
+<h4>Rankings:</h4>
+<p>
+    I wanted a procedure to identify the best products for each specific category in a city. For instance, I wanted to
+    know the best pizzas in Naples. So I realized that I could read reviews and use sentiment analysis on each review.
+    That's fine, but the reviews are usually associated with a restaurant:
+</p>
+<img src="images/prog_seo/restau_reviews.png" alt="" class="image"><p>
+    So I wrote a simple python program that analyzed every restaurant's review and identified which products it was
+    mentioning.
+</p>
+<img src="images/prog_seo/focaccia.png" alt="" class="image"><p>
+    I compute an average sentiment score for each product and sort them accordingly.
+</p>
+
+<img src="images/prog_seo/product_reviews.png" alt="" class="image"><h4>Generated Pages:</h4>
 <p>
     The pages generated for the sake of programmatic SEO are simply ranking pages. They are pages containing an ordered
     list of products sorted by specific metrics. For instance: price. For each category and city, I generated a list of
@@ -97,10 +113,11 @@
 </p>
 <ul>
 <li>
-<a href="https://where2buy.it/cheapest-focaccia-bari">cheapest Focaccia in Bari</a>;</li>
+<a href="https://where2buy.it/cheapest-focaccia-bari">Cheapest Focaccia in Bari</a>;</li>
     <li>
-<a href="https://where2buy.it/most-expensive-pizza-reggio-calabria">most expensive Pizza in Reggio Calabria</a>;
-    </li>
+<a href="https://where2buy.it/most-expensive-pizza-reggio-calabria">Most expensive Pizza in Reggio Calabria</a>;</li>
+    <li>
+<a href="https://where2buy.it/best-pizza-naples/">Best Pizza in Naples</a>;</li>
 </ul>
 <h4> Results:</h4>
 <p>

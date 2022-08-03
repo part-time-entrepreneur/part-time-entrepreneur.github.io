@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Part-time Entrepreneur</title><link>https://part-time-entrepreneur.com/</link><description>My journey to financial indipendence through bootstraped entrepreneural projects.</description><atom:link href="https://part-time-entrepreneur.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:eracle@posteo.eu"&gt;Antonio Ercole De Luca&lt;/a&gt; </copyright><lastBuildDate>Tue, 02 Aug 2022 18:12:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How I spent 0€ to get traffic from Google using Programmatic SEO</title><link>https://part-time-entrepreneur.com/posts/how-i-spent-0eur-to-get-traffic-from-google-using-programmatic-seo/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;div class="title"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>The Part-time Entrepreneur</title><link>https://part-time-entrepreneur.com/</link><description>My journey to financial indipendence through bootstraped entrepreneural projects.</description><atom:link href="https://part-time-entrepreneur.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:eracle@posteo.eu"&gt;Antonio Ercole De Luca&lt;/a&gt; </copyright><lastBuildDate>Wed, 03 Aug 2022 22:06:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How I spent 0€ to get traffic from Google using Programmatic SEO</title><link>https://part-time-entrepreneur.com/posts/how-i-spent-0eur-to-get-traffic-from-google-using-programmatic-seo/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;div class="title"&gt;
     &lt;h3&gt;How I spent 0€ to get traffic from Google using Programmatic SEO&lt;/h3&gt;
     &lt;p&gt;How I used it on getting first traffic with &lt;a href="https://where2buy.it"&gt;Where2buy.it&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
@@ -26,9 +26,10 @@
 &lt;/p&gt;
 
 &lt;p&gt;
-
     The template should allow you to use variables inside your HTML, so they can be substituted using the data from your
     database.
+
+    &lt;img src="https://part-time-entrepreneur.com/images/prog_seo/template.png" alt="" class="image"&gt;
     One detail about your database: you should also have some content specifically related to the keyword you are using.
     For instance, if you use keywords related to cities, you can include other information like the name of its region,
     nation or some text unique to that city. The objective is to obtain every page different from all the other pages.
@@ -48,9 +49,29 @@
     In my database, I store different entities:
     The Cities, the Restaurants and the Products sold in those restaurants.
     I got the Cities data for free simply by using Django and its ecosystem of open-source pluggable apps, which solved
-    many of my problems.  I used Django-cities-light, which automagically downloads the data of all the cities in the world and stores them in my database. It also provides the hierarchy of City, Region and Nation.
+    many of my problems. I used Django-cities-light, which automagically downloads the data of all the cities in the
+    world and stores them in my database. It also provides the hierarchy of City, Region and Nation.
     I got Restaurants and Products data from the Internet.
 &lt;/p&gt;
+
+&lt;h4&gt;Rankings:&lt;/h4&gt;
+&lt;p&gt;
+    I wanted a procedure to identify the best products for each specific category in a city. For instance, I wanted to
+    know the best pizzas in Naples. So I realized that I could read reviews and use sentiment analysis on each review.
+    That's fine, but the reviews are usually associated with a restaurant:
+&lt;/p&gt;
+&lt;img src="https://part-time-entrepreneur.com/images/prog_seo/restau_reviews.png" alt="" class="image"&gt;
+&lt;p&gt;
+    So I wrote a simple python program that analyzed every restaurant's review and identified which products it was
+    mentioning.
+&lt;/p&gt;
+&lt;img src="https://part-time-entrepreneur.com/images/prog_seo/focaccia.png" alt="" class="image"&gt;
+
+&lt;p&gt;
+    I compute an average sentiment score for each product and sort them accordingly.
+&lt;/p&gt;
+
+&lt;img src="https://part-time-entrepreneur.com/images/prog_seo/product_reviews.png" alt="" class="image"&gt;
 
 &lt;h4&gt;Generated Pages:&lt;/h4&gt;
 &lt;p&gt;
@@ -58,9 +79,9 @@
     list of products sorted by specific metrics. For instance: price. For each category and city, I generated a list of
     the cheapest products sold in that city.
 &lt;/p&gt;&lt;ul&gt;
-    &lt;li&gt;&lt;a href="https://where2buy.it/cheapest-focaccia-bari"&gt;cheapest Focaccia in Bari&lt;/a&gt;;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="https://where2buy.it/most-expensive-pizza-reggio-calabria"&gt;most expensive Pizza in Reggio Calabria&lt;/a&gt;;
-    &lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://where2buy.it/cheapest-focaccia-bari"&gt;Cheapest Focaccia in Bari&lt;/a&gt;;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://where2buy.it/most-expensive-pizza-reggio-calabria"&gt;Most expensive Pizza in Reggio Calabria&lt;/a&gt;;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="https://where2buy.it/best-pizza-naples/"&gt;Best Pizza in Naples&lt;/a&gt;;&lt;/li&gt;
 &lt;/ul&gt;
 
 
