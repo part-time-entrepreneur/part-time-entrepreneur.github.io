@@ -17,7 +17,7 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Antonio Ercole De Luca"  # (translatable)
-BLOG_TITLE = "The Part-time Entrepreneur"  # (translatable)
+BLOG_TITLE = "Part-time Entrepreneur"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
 SITE_URL = "https://part-time-entrepreneur.com/"
