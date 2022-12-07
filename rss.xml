@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Part-time Entrepreneur</title><link>https://part-time-entrepreneur.com/</link><description>My journey to financial indipendence through bootstraped entrepreneural projects.</description><atom:link href="https://part-time-entrepreneur.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:eracle@posteo.eu"&gt;Antonio Ercole De Luca&lt;/a&gt; </copyright><lastBuildDate>Tue, 06 Dec 2022 00:01:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Moving to Las Palmas de Gran Canaria and Starting a YouTube Channel</title><link>https://part-time-entrepreneur.com/posts/moving-to-las-palmas-de-gran-canaria-and-starting-a-youtube-channel/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;p&gt;In 2022, I made the decision to leave Italy and move to the beautiful city of Las Palmas de Gran Canaria. The main
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Part-time Entrepreneur</title><link>https://part-time-entrepreneur.com/</link><description>My journey to financial indipendence through bootstraped entrepreneural projects.</description><atom:link href="https://part-time-entrepreneur.com/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2022 &lt;a href="mailto:eracle@posteo.eu"&gt;Antonio Ercole De Luca&lt;/a&gt; </copyright><lastBuildDate>Wed, 07 Dec 2022 22:42:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>How I Used ChatGPT to Reply to Every Tweet in My Timeline and Became a Twitter Sensation!</title><link>https://part-time-entrepreneur.com/posts/how-i-used-chatgpt-to-reply-to-every-tweet-in-my-timeline-and-became-a-twitter-sensation/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;h1&gt;I recently became a Twitter sensation thanks to my experiment with ChatGPT. &lt;/h1&gt;
+&lt;p&gt;By writing a connector between ChatGPT and Twitter, I was able to reply to every tweet in my timeline with only
+    bot responses. With the help of the Selenium web driver, I was able to control a web browser and interact
+    with ChatGPT without using any API.&lt;/p&gt;
+
+&lt;p&gt;Interestingly, the bot replied in different languages and often created valuable content in the conversation. Like
+    the following one:&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" data-partner="tweetdeck"&gt;&lt;p lang="en" dir="ltr"&gt;RT &lt;a href="https://twitter.com/ThePrimeagen?ref_src=twsrc%5Etfw"&gt;@ThePrimeagen&lt;/a&gt;: I agree that serverless
+    architecture can make it difficult to switch providers. It's important to carefully consider the terms and
+    potential lock-in before committing to a specific provider. It's also worth looking into ways to mitigate
+    potential lock-in, such a&lt;/p&gt;— Part-Time Entrepreneur (@pieracle) &lt;a href="https://twitter.com/pieracle/status/1599937484124819456?ref_src=twsrc%5Etfw"&gt;December 6, 2022&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This caught the attention of some major accounts, which retweeted my tweets and spread them to a much bigger
+    audience:&lt;/p&gt;
+&lt;img src="https://part-time-entrepreneur.com/images/retweets.png" alt="Analytics after retweets." class="image" style="width: 100%; height: 100%;"&gt;
+
+&lt;p&gt;However, there were some drawbacks. My online community was able to spot that the replies were not written by a
+    human:&lt;/p&gt;
+&lt;blockquote class="twitter-tweet" data-partner="tweetdeck"&gt;&lt;p lang="en" dir="ltr"&gt;&lt;a href="https://twitter.com/rrmdp?ref_src=twsrc%5Etfw"&gt;@rrmdp&lt;/a&gt; I'm sorry to hear that you're feeling
+    frustrated. Sometimes it can be difficult to stay engaged and motivated, especially when things don't seem to be
+    going as we'd like. Remember that it's okay to take a break and come back when you're feeling refreshed
+    and ready to tackl&lt;/p&gt;— Part-Time Entrepreneur (@pieracle) &lt;a href="https://twitter.com/pieracle/status/1599937154976825345?ref_src=twsrc%5Etfw"&gt;December 6, 2022&lt;/a&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;ChatGPT is a game changing technology and soon OpenAI will change its pricing
+    model from free to a pay-per-API-call system, similar to how GPT3 works.&lt;/p&gt;
+
+&lt;p&gt;This made me think: If we are able to pass the Social Media Touring Test, are we going to be able to trust content in
+    social media anymore? Solutions that spot bots by checking the type of content may not be enough,
+    and the only solution I can think of is to use techniques like captchas.
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Elon Musk has his work cut out for him – will we have to solve a captcha for every tweet we write in the future?&lt;/p&gt;</description><guid>https://part-time-entrepreneur.com/posts/how-i-used-chatgpt-to-reply-to-every-tweet-in-my-timeline-and-became-a-twitter-sensation/</guid><pubDate>Wed, 07 Dec 2022 21:45:39 GMT</pubDate></item><item><title>Moving to Las Palmas de Gran Canaria and Starting a YouTube Channel</title><link>https://part-time-entrepreneur.com/posts/moving-to-las-palmas-de-gran-canaria-and-starting-a-youtube-channel/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;h1&gt;Moving to Las Palmas de Gran Canaria and Starting a YouTube Channel&lt;/h1&gt;
+&lt;p&gt;In 2022, I made the decision to leave Italy and move to the beautiful city of Las Palmas de Gran Canaria. The main
     reasons for my move were the fantastic weather and the thriving digital nomad community. I believe that in the
     future, we will all work less and more people will choose to work remotely from places that offer good living
     standards, like Europe.&lt;/p&gt;
@@ -18,7 +52,7 @@
     digital age, follow me on Twitter and Youtube. I post regular updates and engaging content to help you on your
     journey.&lt;/p&gt;
 &lt;p&gt;
-    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ROvcQqaZZaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;iframe style="text-align: center;" width="560" height="315" src="https://www.youtube.com/embed/ROvcQqaZZaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/p&gt;</description><guid>https://part-time-entrepreneur.com/posts/moving-to-las-palmas-de-gran-canaria-and-starting-a-youtube-channel/</guid><pubDate>Mon, 05 Dec 2022 23:27:19 GMT</pubDate></item><item><title>How I spent 0€ to get traffic from Google using Programmatic SEO</title><link>https://part-time-entrepreneur.com/posts/how-i-spent-0eur-to-get-traffic-from-google-using-programmatic-seo/</link><dc:creator>Antonio Ercole De Luca</dc:creator><description>&lt;div class="title"&gt;
     &lt;h3&gt;How I spent 0€ to get traffic from Google using Programmatic SEO&lt;/h3&gt;
     &lt;p&gt;How I used it on getting first traffic with &lt;a href="https://where2buy.it"&gt;Where2buy.it&lt;/a&gt;&lt;/p&gt;
