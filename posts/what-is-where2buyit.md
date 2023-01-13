@@ -19,6 +19,8 @@ business model. The website's software scans through reviews, looking for keywor
 like and dislike about a particular product and generates a summary of the review highlighting the most important
 points. Currently, the website only writes articles in English, but plans to expand to other languages in the future.
 
+![ Example of product description.](/images/whybuy.png "Example of product description")
+
 It aims to help users make informed purchasing decisions while reducing the time and effort they spend researching
 products. It utilizes advanced Natural Language Processing techniques to extract valuable information from user reviews
 on Amazon, which is then presented in the form of detailed product reviews. The website's philosophy is to work smarter,
